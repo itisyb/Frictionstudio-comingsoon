@@ -1,193 +1,397 @@
-<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Fri Jul 16 2021 08:21:16 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="60f00236254171d932229752" data-wf-site="60f002362541716954229751">
-<head>
-  <meta charset="utf-8">
-  <title>Frictionstudio</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/frictionstudio.webflow.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-</head>
-<body class="body">
-  <div class="backgroundlines">
-    <div data-w-id="cf080764-e2f8-51b0-1e38-b2d74bc51476" style="height:0%" class="div-block-2 _1"></div>
-    <div data-w-id="aeae00de-e686-52a0-6ce1-1942e3948a55" style="height:0%" class="div-block-2"></div>
-    <div data-w-id="842d5e53-125b-9d04-6809-1eb28bf9ab09" style="height:0%" class="div-block-2"></div>
-    <div data-w-id="7faab303-6bc9-4712-0497-2d5c5fba655b" style="height:0%" class="div-block-2"></div>
-    <div data-w-id="1f38d053-2002-59d8-9b69-9543cd5830f9" style="height:0%" class="div-block-2"></div>
-    <div data-w-id="fac85c80-2ac0-a63f-ba8a-8de8feeb0ae7" style="height:0%" class="div-block-2"></div>
-    <div data-w-id="d3f749c6-4186-1560-9d77-fbaf667e25f0" style="height:0%" class="div-block-2"></div>
-  </div>
-  <div class="style w-embed">
-    <style> .outline-heading { -webkit-text-fill-color: transparent; -webkit-background-clip: text; -webkit-text-stroke: 1px #fff; } 
-</style>
-  </div>
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
-    <div class="nav__wrapper">
-      <a href="#" class="w-nav-brand"><img src="images/Group-4316.png" loading="lazy" alt="" class="image"></a>
-      <a data-w-id="9dc7487e-5544-db66-e40e-76441d01cb48" href="https://calendly.com/vishal-/30min" target="_blank" class="nav__cta w-inline-block">
-        <div class="play-icon">
-          <p class="paragraph">Schedule a call</p>
-        </div>
-        <div class="button-gradient-copy static-copy">
-          <div class="color-copy cc-pulm-copy"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient static">
-          <div class="color cc-pulm"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _6">
-          <div class="color cc-pulm"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _5">
-          <div class="color cc-pulm-sunset"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _4">
-          <div class="color cc-sunset"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _3">
-          <div class="color cc-sunset-forest"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _2">
-          <div class="color cc-forest"></div>
-        </div>
-        <div style="opacity:0" class="button-gradient _1">
-          <div class="color cc-forest-pulm"></div>
-        </div>
-      </a>
+<html
+  data-wf-page="60f00236254171d932229752"
+  data-wf-site="60f002362541716954229751"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Frictionstudio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/frictionstudio.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+          ],
+        },
+      });
+    </script>
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+  </head>
+  <body class="body">
+    <div class="backgroundlines">
+      <div
+        data-w-id="cf080764-e2f8-51b0-1e38-b2d74bc51476"
+        style="height: 0%"
+        class="div-block-2 _1"
+      ></div>
+      <div
+        data-w-id="aeae00de-e686-52a0-6ce1-1942e3948a55"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
+      <div
+        data-w-id="842d5e53-125b-9d04-6809-1eb28bf9ab09"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
+      <div
+        data-w-id="7faab303-6bc9-4712-0497-2d5c5fba655b"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
+      <div
+        data-w-id="1f38d053-2002-59d8-9b69-9543cd5830f9"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
+      <div
+        data-w-id="fac85c80-2ac0-a63f-ba8a-8de8feeb0ae7"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
+      <div
+        data-w-id="d3f749c6-4186-1560-9d77-fbaf667e25f0"
+        style="height: 0%"
+        class="div-block-2"
+      ></div>
     </div>
-  </div>
-  <div class="herosection">
-    <div data-w-id="927e8c79-e49c-25b5-28b0-bd1781656848" style="-webkit-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero_section-heading1">
-      <h1 class="heading outline-heading">Coming</h1>
-      <h1 class="heading mobile">SOON</h1>
+    <div class="style w-embed">
+      <style>
+        .outline-heading {
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px #fff;
+        }
+      </style>
     </div>
-    <div data-w-id="73c939fd-206d-2993-ab5b-4a165723abf0" style="-webkit-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero_section-heading2">
-      <h1 class="heading-copy">SOON</h1>
-    </div>
-    <div class="followus__section">
-      <h4 data-w-id="633e3bfa-6f99-042a-2788-8fc5302149d3" style="-webkit-transform:translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-2">Contact us</h4>
-      <div class="social__links">
-        <a data-w-id="8265e96e-23c9-9709-fa66-500af6813a38" style="-webkit-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="mailto:Vishal@friction.studio?subject=Enquiry%20for%20website" class="link_block--mail w-inline-block">
-          <div class="play-icon"><img src="images/email.svg" loading="lazy" alt="" class="icon"></div>
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navbar w-nav"
+    >
+      <div class="nav__wrapper">
+        <a href="#" class="w-nav-brand"
+          ><img src="images/Group-4316.png" loading="lazy" alt="" class="image"
+        /></a>
+        <a
+          data-w-id="9dc7487e-5544-db66-e40e-76441d01cb48"
+          href="https://calendly.com/vishal-/30min"
+          target="_blank"
+          class="nav__cta w-inline-block"
+        >
+          <div class="play-icon">
+            <p class="paragraph">Schedule a call</p>
+          </div>
           <div class="button-gradient-copy static-copy">
             <div class="color-copy cc-pulm-copy"></div>
           </div>
-          <div style="opacity:0" class="button-gradient static">
+          <div style="opacity: 0" class="button-gradient static">
             <div class="color cc-pulm"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _6">
+          <div style="opacity: 0" class="button-gradient _6">
             <div class="color cc-pulm"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _5">
+          <div style="opacity: 0" class="button-gradient _5">
             <div class="color cc-pulm-sunset"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _4">
+          <div style="opacity: 0" class="button-gradient _4">
             <div class="color cc-sunset"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _3">
+          <div style="opacity: 0" class="button-gradient _3">
             <div class="color cc-sunset-forest"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _2">
+          <div style="opacity: 0" class="button-gradient _2">
             <div class="color cc-forest"></div>
           </div>
-          <div style="opacity:0" class="button-gradient _1">
-            <div class="color cc-forest-pulm"></div>
-          </div>
-        </a>
-        <a data-w-id="38b75ea6-4fe4-c307-647e-d7694062e1ee" style="-webkit-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="https://www.instagram.com/vishal.goswami1/" target="_blank" class="link_block--mail w-inline-block">
-          <div class="play-icon"><img src="images/insta.svg" loading="lazy" alt="" class="icon"></div>
-          <div class="button-gradient-copy static-copy">
-            <div class="color-copy cc-pulm-copy"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient static">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _6">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _5">
-            <div class="color cc-pulm-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _4">
-            <div class="color cc-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _3">
-            <div class="color cc-sunset-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _2">
-            <div class="color cc-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _1">
-            <div class="color cc-forest-pulm"></div>
-          </div>
-        </a>
-        <a data-w-id="a07c5026-2a05-4810-89e0-c51e48f8cf11" style="-webkit-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="https://www.facebook.com/babavishi" target="_blank" class="link_block--mail w-inline-block">
-          <div class="play-icon"><img src="images/facebook.svg" loading="lazy" alt="" class="icon"></div>
-          <div class="button-gradient-copy static-copy">
-            <div class="color-copy cc-pulm-copy"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient static">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _6">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _5">
-            <div class="color cc-pulm-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _4">
-            <div class="color cc-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _3">
-            <div class="color cc-sunset-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _2">
-            <div class="color cc-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _1">
-            <div class="color cc-forest-pulm"></div>
-          </div>
-        </a>
-        <a data-w-id="a05d59ac-c7d3-b0d0-651c-a1680ef7f348" style="-webkit-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="https://www.linkedin.com/in/vishal-baba/" target="_blank" class="link_block--mail w-inline-block">
-          <div class="play-icon"><img src="images/linkedin.svg" loading="lazy" alt="" class="icon"></div>
-          <div class="button-gradient-copy static-copy">
-            <div class="color-copy cc-pulm-copy"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient static">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _6">
-            <div class="color cc-pulm"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _5">
-            <div class="color cc-pulm-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _4">
-            <div class="color cc-sunset"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _3">
-            <div class="color cc-sunset-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _2">
-            <div class="color cc-forest"></div>
-          </div>
-          <div style="opacity:0" class="button-gradient _1">
+          <div style="opacity: 0" class="button-gradient _1">
             <div class="color cc-forest-pulm"></div>
           </div>
         </a>
       </div>
     </div>
-  </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60f002362541716954229751" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-</body>
+    <div class="herosection">
+      <div
+        data-w-id="927e8c79-e49c-25b5-28b0-bd1781656848"
+        style="
+          -webkit-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          opacity: 0;
+        "
+        class="hero_section-heading1"
+      >
+        <h1 class="heading outline-heading">Coming</h1>
+        <h1 class="heading mobile">SOON</h1>
+      </div>
+      <div
+        data-w-id="73c939fd-206d-2993-ab5b-4a165723abf0"
+        style="
+          -webkit-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0) skew(0, 0);
+          opacity: 0;
+        "
+        class="hero_section-heading2"
+      >
+        <h1 class="heading-copy">SOON</h1>
+      </div>
+      <div class="followus__section">
+        <h4
+          data-w-id="633e3bfa-6f99-042a-2788-8fc5302149d3"
+          style="
+            -webkit-transform: translate3d(0%, 30%, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0%, 30%, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+          class="heading-2"
+        >
+          Contact us
+        </h4>
+        <div class="social__links">
+          <a
+            data-w-id="8265e96e-23c9-9709-fa66-500af6813a38"
+            style="
+              -webkit-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+            href="mailto:Vishal@friction.studio?subject=Enquiry%20for%20website"
+            class="link_block--mail w-inline-block"
+          >
+            <div class="play-icon">
+              <img src="images/email.svg" loading="lazy" alt="" class="icon" />
+            </div>
+            <div class="button-gradient-copy static-copy">
+              <div class="color-copy cc-pulm-copy"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient static">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _6">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _5">
+              <div class="color cc-pulm-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _4">
+              <div class="color cc-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _3">
+              <div class="color cc-sunset-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _2">
+              <div class="color cc-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _1">
+              <div class="color cc-forest-pulm"></div>
+            </div>
+          </a>
+          <a
+            data-w-id="38b75ea6-4fe4-c307-647e-d7694062e1ee"
+            style="
+              -webkit-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+            href="https://www.instagram.com/frictionstudio/"
+            target="_blank"
+            class="link_block--mail w-inline-block"
+          >
+            <div class="play-icon">
+              <img src="images/insta.svg" loading="lazy" alt="" class="icon" />
+            </div>
+            <div class="button-gradient-copy static-copy">
+              <div class="color-copy cc-pulm-copy"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient static">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _6">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _5">
+              <div class="color cc-pulm-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _4">
+              <div class="color cc-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _3">
+              <div class="color cc-sunset-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _2">
+              <div class="color cc-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _1">
+              <div class="color cc-forest-pulm"></div>
+            </div>
+          </a>
+          <a
+            data-w-id="a07c5026-2a05-4810-89e0-c51e48f8cf11"
+            style="
+              -webkit-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+            href="https://www.facebook.com/frictiondotstudio"
+            target="_blank"
+            class="link_block--mail w-inline-block"
+          >
+            <div class="play-icon">
+              <img
+                src="images/facebook.svg"
+                loading="lazy"
+                alt=""
+                class="icon"
+              />
+            </div>
+            <div class="button-gradient-copy static-copy">
+              <div class="color-copy cc-pulm-copy"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient static">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _6">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _5">
+              <div class="color cc-pulm-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _4">
+              <div class="color cc-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _3">
+              <div class="color cc-sunset-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _2">
+              <div class="color cc-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _1">
+              <div class="color cc-forest-pulm"></div>
+            </div>
+          </a>
+          <a
+            data-w-id="a05d59ac-c7d3-b0d0-651c-a1680ef7f348"
+            style="
+              -webkit-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0px, 20%, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+            href="https://www.linkedin.com/company/friction-studio"
+            target="_blank"
+            class="link_block--mail w-inline-block"
+          >
+            <div class="play-icon">
+              <img
+                src="images/linkedin.svg"
+                loading="lazy"
+                alt=""
+                class="icon"
+              />
+            </div>
+            <div class="button-gradient-copy static-copy">
+              <div class="color-copy cc-pulm-copy"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient static">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _6">
+              <div class="color cc-pulm"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _5">
+              <div class="color cc-pulm-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _4">
+              <div class="color cc-sunset"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _3">
+              <div class="color cc-sunset-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _2">
+              <div class="color cc-forest"></div>
+            </div>
+            <div style="opacity: 0" class="button-gradient _1">
+              <div class="color cc-forest-pulm"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60f002362541716954229751"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  </body>
 </html>
